@@ -1,0 +1,335 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+  padding: 180px;
+  /*! box-sizing: content-box; */
+  clear: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.round-section {
+  width: 300px;
+  height: 300px;
+  border: 0px solid #000;
+  border-radius: 50%;
+  /*! box-shadow: 0 0 20px -5px #000; */
+  position: relative;
+}
+
+.round-section div {
+  border-radius: 50%;  
+  position: absolute;
+  z-index: 0;
+}
+
+.round-section>div:nth-child(1) {
+  width: 260px;
+  height: 260px;
+  left: 20px;
+  top: 20px;
+  z-index: 0;
+  background-image: url('./assets/circleBg.jpg');
+  -webkit-animation: roundSection1 2s 1;
+  animation: roundSection1 2s 1;
+}
+
+.round-section>div:nth-child(2) {
+  width: 220px;
+  height: 220px;
+  left: 40px;
+  top: 40px;  
+  -webkit-animation: roundSection2 2s 1;
+  animation: roundSection2 2s 1;
+}
+
+.round-section>div:nth-child(3) {
+  width: 180px;
+  height: 180px;
+  left: 60px;
+  top: 60px;  
+  -webkit-animation: roundSection3 2s 1;
+  animation: roundSection3 2s 1;
+}
+
+.round-section>div:nth-child(4) {
+  width: 140px;
+  height: 140px;
+  left: 80px;
+  top: 80px;  
+  -webkit-animation: roundSection4 2s 1;
+  animation: roundSection4 2s 1;
+}
+
+.round-section>div:nth-child(5) {
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 100px;  
+  -webkit-animation: roundSection5 2s 1;
+  animation: roundSection5 2s 1;
+}
+
+.round-section>div:nth-child(6) {
+  width: 60px;
+  height: 60px;
+  left: 120px;
+  top: 120px;  
+  -webkit-animation: roundSection6 2s 1;
+  animation: roundSection6 2s 1;
+}
+
+.round-section>div>div {
+  width: 100px;
+  height: 100px;
+}
+
+.round-section>div:nth-child(1)>div {
+  left: -50px;
+  bottom: -145px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round1 2s 1;
+  animation: round 2s 1, round1 2s 1;
+}
+
+.round-section>div:nth-child(2)>div {
+  left: -200px;
+  top: 58px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round2 2s 1;
+  animation: round 2s 1, round2 2s 1;
+}
+
+.round-section>div:nth-child(3)>div {
+  left: -90px;
+  top: -185px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round3 2s 1;
+  animation: round 2s 1, round3 2s 1;
+}
+
+.round-section>div:nth-child(4)>div {
+  right: -110px;
+  top: -205px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round4 2s 1;
+  animation: round 2s 1, round4 2s 1;
+}
+
+.round-section>div:nth-child(5)>div {
+  right: -260px;
+  bottom: 0px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round5 2s 1;
+  animation: round 2s 1, round5 2s 1;
+}
+
+.round-section>div:nth-child(6)>div {
+  right: -150px;
+  bottom: -245px;
+  background-color: #ffffff;
+  -webkit-animation: round 2s 1, round6 2s 1;
+  animation: round 2s 1, round6 2s 1;
+}
+
+.round-section>div:before {
+  content: "";
+  width: 20px;  
+  display: block;
+  position: absolute;
+  z-index: 1;  
+}
+
+.round-section>div:nth-child(1):before {
+  height: 84px;
+  left: 36px;
+  bottom: -61px;
+  transform: rotate(30deg);  
+}
+
+.round-section>div:nth-child(2):before {
+  height: 104px;
+  left: -61px;
+  bottom: 59px;
+  transform: rotate(-90deg);  
+}
+
+.round-section>div:nth-child(3):before {
+  height: 128px;
+  left: 7px;
+  top: -105px;
+  transform: rotate(-30deg);  
+}
+
+.round-section>div:nth-child(4):before {
+  height: 148px;
+  right: -9px;
+  top: -124px;
+  transform: rotate(30deg);
+  
+}
+
+.round-section>div:nth-child(5):before {
+  height: 172px;
+  right: -90px;
+  bottom: -36px;
+  transform: rotate(90deg);
+  
+}
+
+.round-section>div:nth-child(6):before {
+  height: 190px;
+  right: -42px;
+  bottom: -169px;
+  transform: rotate(-30deg);
+  
+}
+/* --------------------------------------- */
+@-webkit-keyframes roundSection1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes roundSection2 {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection2 {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes roundSection3 {
+  from {
+    transform: rotate(-120deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection3 {
+  from {
+    transform: rotate(-120deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes roundSection4 {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection4 {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes roundSection5 {
+  from {
+    transform: rotate(-240deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection5 {
+  from {
+    transform: rotate(-240deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes roundSection6 {
+  from {
+    transform: rotate(-300deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roundSection6 {
+  from {
+    transform: rotate(-300deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
