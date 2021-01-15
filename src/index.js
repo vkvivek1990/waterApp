@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicRoute from './components/BasicRoute'
 
@@ -9,7 +8,6 @@ import BasicRoute from './components/BasicRoute'
 ReactDOM.render(
   <React.StrictMode>
     <BasicRoute />
-    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

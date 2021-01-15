@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Mapspage from '../../pages/Mapspage/'
+import Mapspage from '../../pages/Mapspage/';
+import App from '../../App';
 
 export default class BasicRoute extends React.Component {
    render() {
@@ -16,7 +17,7 @@ export default class BasicRoute extends React.Component {
          </div>
          <Switch>
           <Route path="/maps"> <Mapspage /> </Route>
-          
+          <Route path="/"> <App /> </Route>
         </Switch>
         </Router>
          </React.Fragment>
