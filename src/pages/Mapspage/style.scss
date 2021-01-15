@@ -2,4 +2,23 @@ body {
     margin: 0;
     overflow-x: hidden;    
     overflow-y: auto;
+    .mapsBlock {
+        margin: 20px;
+        max-height: 600px;
+        overflow: hidden;
+        overflow-y: scroll;
+        border: 1px solid #555;
+        .margin_0 {
+            margin: 10px 0;
+        }
+        .padding_0 {
+            padding: 0;
+        }
+        .map-container {
+            border: 1px solid #eee;
+            margin: 4px;
+            box-shadow: 4px 4px 5px #eee;
+            padding: 3px;
+        }
+    }
 }
