@@ -6,9 +6,9 @@ import BasicRoute from './components/BasicRoute'
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <BasicRoute />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

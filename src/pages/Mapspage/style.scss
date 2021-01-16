@@ -19,6 +19,12 @@ body {
             margin: 4px;
             box-shadow: 4px 4px 5px #eee;
             padding: 3px;
+            .mapHeadLevel {
+                margin: 0;
+                background: #eee;
+                padding: 7px;
+                font-weight: bold;
+            }
         }
     }
 }

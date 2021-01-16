@@ -27,7 +27,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN10 AE 5109",
                 "mobileNo": "9898989898"
-            }
+            },
+            "vehicleStatus": "In Progress",
+            "iconColor": "#c77c32",
+            "vehicleStatusId": "inprogress"
         },
         {
             "mapid": 2,
@@ -53,7 +56,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN10 AE 5109",
                 "mobileNo": "9898989898"
-            }
+            },
+            "vehicleStatus": "Yet to Start",
+            "iconColor": "#b06ce3",
+            "vehicleStatusId": "yettostart"
         },
         {
             "mapid": 3,
@@ -79,7 +85,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            }
+            },
+            "vehicleStatus": "Delivered",
+            "iconColor": "#2bb389",
+            "vehicleStatusId": "delivered"
         },
         {
             "mapid": 4,
@@ -105,7 +114,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            } 
+            },
+            "vehicleStatus": "Not Tracable",
+            "iconColor": "#d33c73",
+            "vehicleStatusId": "nottracable"
         },
         {
             "mapid": 5,
@@ -131,7 +143,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            }
+            },
+            "vehicleStatus": "Delivered",
+            "iconColor": "#2bb389",
+            "vehicleStatusId": "delivered"
         },
         {
             "mapid": 6,
@@ -157,7 +172,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            }
+            },
+            "vehicleStatus": "Yet to Start",
+            "iconColor": "#b06ce3",
+            "vehicleStatusId": "yettostart"
         }, 
         {
             "mapid": 7,
@@ -183,7 +201,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            } 
+            },
+            "vehicleStatus": "Not Tracable",
+            "iconColor": "#d33c73",
+            "vehicleStatusId": "nottracable" 
         },
         {
             "mapid": 8,
@@ -209,7 +230,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            }
+            },
+            "vehicleStatus": "Delivered",
+            "iconColor": "#2bb389",
+            "vehicleStatusId": "delivered"
         },
         {
             "mapid": 9,
@@ -235,7 +259,10 @@
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN06 V 4973",
                 "mobileNo": "8989898989"
-            }
+            },
+            "vehicleStatus": "Yet to Start",
+            "iconColor": "#b06ce3",
+            "vehicleStatusId": "yettostart"
         }
     ] 
 }

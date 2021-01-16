@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Mapspage from '../../pages/Mapspage/';
+import Mapspage from '../../pages/Mapspage/indexMap';
 import App from '../../App';
 
 export default class BasicRoute extends React.Component {

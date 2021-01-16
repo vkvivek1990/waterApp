@@ -104,6 +104,41 @@ export default class Mapspage extends React.Component {
         console.log('onClick args: ', args)
       }
 
+      loadGoogleMap=()=>{
+        return <GoogleMap id="direction-example" mapContainerStyle={ containerStyle } zoom={4} center={center} onClick={this.onMapClick} onLoad={ map => {
+          console.log('DirectionsRenderer onLoad map: ', map)
+        }} onUnmount={map => { console.log('DirectionsRenderer onUnmount map: ', map)
+        }}>
+        {
+          ( this.state.destination !== '' && this.state.origin !== '' ) && (
+            <DirectionsService options={{ 
+              destination: new window.google.maps.LatLng(41.8525800, -87.6514100),
+              origin: new window.google.maps.LatLng(41.8507300, -87.6512600),
+             travelMode: this.state.travelMode }} callback={this.directionsCallback} 
+              onLoad={directionsService => {
+        console.log('DirectionsService onLoad directionsService: ', directionsService)
+              }}
+      onUnmount={directionsService => {
+                console.log('DirectionsService onUnmount directionsService: ', directionsService)
+              }}
+            />
+          )
+        }
+
+        {
+          this.state.response !== null && (
+            <DirectionsRenderer options={{ directions: this.state.response }} onLoad={directionsRenderer => {
+                console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
+              }} onUnmount={directionsRenderer => {
+                console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
+              }}
+            />
+          )
+        }
+      </GoogleMap>
+
+      }
+
   render() {
     return (
         <div className="mainMap">
@@ -123,7 +158,7 @@ export default class Mapspage extends React.Component {
               <div className='form-group'>
                 <label htmlFor='ORIGIN'>Origin</label>
                 <br />
-                <AutoCompleteContent  ref={this.getOrigin} placeholder={ 'Start Location' } />
+                {/* <AutoCompleteContent  ref={this.getOrigin} placeholder={ 'Start Location' } /> */}
                 <input id='ORIGIN' className='form-control' type='text' ref={this.getOrigin} />
               </div>
             </div>
@@ -132,7 +167,7 @@ export default class Mapspage extends React.Component {
               <div className='form-group'>
                 <label htmlFor='DESTINATION'>Destination</label>
                 <br />
-                <AutoCompleteContent  ref={ this.getDestination } placeholder={ 'End Location' } />
+                {/* <AutoCompleteContent  ref={ this.getDestination } placeholder={ 'End Location' } /> */}
                 <input id='DESTINATION' className='form-control' type='text' ref={ this.getDestination } />
               </div>
             </div>
@@ -164,36 +199,11 @@ export default class Mapspage extends React.Component {
 
       <LoadScript googleMapsApiKey="AIzaSyBMDAZA6d7NLcxPy9FLz1-4-mziC1HO9Ko">
         <div className="map-container">
-          
-          
-          <GoogleMap id="direction-example" mapContainerStyle={ containerStyle } zoom={4} center={center} onClick={this.onMapClick} onLoad={ map => {
-              console.log('DirectionsRenderer onLoad map: ', map)
-            }} onUnmount={map => { console.log('DirectionsRenderer onUnmount map: ', map)
-            }}>
-            {
-              ( this.state.destination !== '' && this.state.origin !== '' ) && (
-                <DirectionsService options={{ destination: this.state.destination, origin: this.state.origin, travelMode: this.state.travelMode }} callback={this.directionsCallback} 
-                  onLoad={directionsService => {
-					  console.log('DirectionsService onLoad directionsService: ', directionsService)
-                  }}
-				  onUnmount={directionsService => {
-                    console.log('DirectionsService onUnmount directionsService: ', directionsService)
-                  }}
-                />
-              )
-            }
-
-            {
-              this.state.response !== null && (
-                <DirectionsRenderer options={{ directions: this.state.response }} onLoad={directionsRenderer => {
-                    console.log('DirectionsRenderer onLoad directionsRenderer: ', directionsRenderer)
-                  }} onUnmount={directionsRenderer => {
-                    console.log('DirectionsRenderer onUnmount directionsRenderer: ', directionsRenderer)
-                  }}
-                />
-              )
-            }
-          </GoogleMap>
+          <div className="row">
+            <div className="col-md-4">  { this.loadGoogleMap() }  </div>
+            <div className="col-md-4">  { this.loadGoogleMap() }  </div>
+            <div className="col-md-4">  { this.loadGoogleMap() }  </div>
+          </div>
         </div>
       </LoadScript>
         {/* <AutoCompleteContent /> */}
