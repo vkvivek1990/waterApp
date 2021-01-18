@@ -21,8 +21,14 @@
                 "lng": "80.275703",
                 "address": "Triplicane, Chennai - 000 000"
             }, 
+            "vehicleDetails": {
+                "lat": "12.2253",
+                "lng": "79.0747",
+                "address": "Thiruvannamali, Trichy - 000 000"
+            }, 
             "driverDetails": {
                 "id": 1,
+                "driverId": "AABB0011",
                 "name": "Driver_1",
                 "licenseNo": "543218548568754",
                 "vehicleNo": "TN10 AE 5109",
@@ -49,7 +55,12 @@
                 "lat": "13.039078",
                 "lng": "80.215096",
                 "address": "West Mambalam, Chennai - 000 000"
-            }, 
+            },
+			"vehicleDetails": {
+                "lat": "13.021183",
+                "lng": "80.224468",
+                "address": "Nungambakkam, Chennai - 000 000"
+            },
             "driverDetails": {
                 "id": 2,
                 "name": "Driver_2",
@@ -74,11 +85,17 @@
                 "lng": "80.253479",
                 "address": "Raja Annamalai Puram, Chennai - 000 000"
             },
+			"vehicleDetails": {
+				"lat": "12.9824",
+                "lng": "80.0603",
+                "address": "Nandambakkam, Chennai - 000 000"
+            }, 
             "destinationDetails": {
                 "lat": "13.021183",
                 "lng": "80.224468",
                 "address": "Saidapet, Chennai - 000 000"
             },
+			
             "driverDetails": {
                 "id": 3,
                 "name": "Driver_3",
@@ -107,6 +124,11 @@
                 "lat": "13.058711",
                 "lng": "80.275703",
                 "address": "Triplicane, Chennai - 000 000"
+            },
+			"vehicleDetails": {
+                "lat": "12.2253",
+                "lng": "79.0747",
+                "address": "Thiruvannamali, Trichy - 000 000"
             },
             "driverDetails": {
                 "id": 4,
@@ -137,6 +159,11 @@
                 "lng": "80.215096",
                 "address": "West Mambalam, Chennai - 000 000"
             },
+			"vehicleDetails": {
+                "lat": "13.021183",
+                "lng": "80.224468",
+                "address": "Nungambakkam, Chennai - 000 000"
+            },
             "driverDetails": {
                 "id": 5,
                 "name": "Driver_5",
@@ -165,6 +192,11 @@
                 "lat": "13.021183",
                 "lng": "80.224468",
                 "address": "Saidapet, Chennai - 000 000"
+            },
+			"vehicleDetails": {
+				"lat": "12.9824",
+                "lng": "80.0603",
+                "address": "Nandambakkam, Chennai - 000 000"
             },
             "driverDetails": {
                 "id": 6,
@@ -195,6 +227,11 @@
                 "lng": "80.275703",
                 "address": "Triplicane, Chennai - 000 000"
             },
+			"vehicleDetails": {
+                "lat": "12.2253",
+                "lng": "79.0747",
+                "address": "Thiruvannamali, Trichy - 000 000"
+            },
             "driverDetails": {
                 "id": 7,
                 "name": "Driver_7",
@@ -224,6 +261,11 @@
                 "lng": "80.215096",
                 "address": "West Mambalam, Chennai - 000 000"
             },
+			"vehicleDetails": {
+                "lat": "13.021183",
+                "lng": "80.224468",
+                "address": "Nungambakkam, Chennai - 000 000"
+            },
             "driverDetails": {
                 "id": 8,
                 "name": "Driver_9",
@@ -252,6 +294,11 @@
                 "lat": "13.021183",
                 "lng": "80.224468",
                 "address": "Saidapet, Chennai - 000 000"
+            },
+			"vehicleDetails": {
+				"lat": "12.9824",
+                "lng": "80.0603",
+                "address": "Nandambakkam, Chennai - 000 000"
             },
             "driverDetails": {
                 "id": 9,
