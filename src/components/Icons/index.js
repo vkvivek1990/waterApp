@@ -4,9 +4,9 @@ import 'material-icons/iconfont/material-icons.scss';
 export default class Icons extends React.Component {
 
     render() {
-        debugger
+//        debugger
         return (
-            <span className="material-icons">{ this.props.children }</span>
+            <span className={`material-icons ${this.props.className}`}>{ this.props.children }</span>
         )
     }
 } 
